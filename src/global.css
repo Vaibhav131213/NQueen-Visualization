@@ -1,0 +1,101 @@
+.WelcomePage {
+  display: flex;             /* Enables Flexbox */
+  flex-direction: column;    /* Stack children (h1 and button) vertically */
+  justify-content: center;   /* Center content vertically */
+  align-items: center;       /* Center content horizontally */
+  height: 100vh;             /* Full height of the viewport */
+  margin: 0;                 /* Remove default margin */
+  background-color: violet;  /* Optional: Adds background color for better visibility */
+}
+
+/* Styling for the button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px; /* Adds spacing between the h1 and the button */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Style for the board container */
+.board {
+display: block; /* Block-level container to allow stacking of rows vertically */
+margin-top: 20px;
+justify-content: center;
+padding: 10px 10px;
+background-color: #fff;
+}
+
+
+.row {
+display: flex; /* Flexbox layout to arrange the cells horizontally within a row */
+}
+
+.cell {
+width: 30px; /* Size of each cell */
+height: 30px;
+border: 1px solid #ccc; /* Optional: Border to visually separate cells */
+box-sizing: border-box;
+}
+
+.black {
+background-color: black; /* Black color for even rows */
+}
+
+.white {
+background-color: #fff; /* White color for odd rows */
+}
+
+.queen {
+background-color: gold;
+}
+
+/* .dot {
+background-color: transparent; 
+} */
+
+body{
+  background-color: violet;
+}
+.box{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+
+h1,h2{
+display: flex;
+justify-content: center;
+}
+
+.inputButton{
+display: flex;
+justify-content: center;
+}
+
+.input{
+width: 20vh;
+}
+
+.gridButton{
+display: flex;
+justify-content: center;
+}
+
+.arrbutton{
+display: flex;
+justify-content: center;
+gap: 10vh;
+}
+
+.chessBoard{
+display: flex;
+justify-content: center;
+}

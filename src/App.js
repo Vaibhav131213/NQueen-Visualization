@@ -1,24 +1,33 @@
 import logo from './logo.svg';
-import './App.css';
+import {useState} from "react";
+import Welcome from './Welcome.js';
+import Simulation from './Simulation.js';
+// import './App.css';
 
+// function Welcome(){
+//   const[page,setPage] = useState();
+//   return(
+  // <div className='WelcomePage'>
+  // <h1>Welcome to the N Queen Simulation program.</h1>
+  // <div><button onClick={()=> setPage()}>Click here to Start Simulation</button></div>
+  // </div>
+//   )
+// }
+
+// function Mybutton(){
+//   return (
+//   <button className="WelcomePage" >
+//     Click here to Start Simulation
+//   </button>
+//   );
+// }
 function App() {
+  const [page,setPage] = useState("Welcome");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+    {page === "Welcome" && <Welcome setPage={setPage}/>}
+    {page === "Simulation" && <Simulation/>}
+  </div>
   );
 }
 
